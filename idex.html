@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataVista Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>DataVista</h2>
+    <a href="#">Home</a>
+    <a href="#">Analytics</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="title">Dashboard</div>
+    <div class="profile">
+      <button class="toggle-btn" id="themeToggle">Toggle Theme</button>
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=faces&fit=crop&w=40&h=40" alt="Profile">
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <!-- Stats Cards -->
+    <div class="cards">
+      <div class="card">
+        <h3>Total Sales</h3>
+        <p>$12,340</p>
+      </div>
+      <div class="card">
+        <h3>Users</h3>
+        <p>1,235</p>
+      </div>
+      <div class="card">
+        <h3>Revenue</h3>
+        <p>$8,450</p>
+      </div>
+      <div class="card">
+        <h3>Tasks</h3>
+        <p>32</p>
+      </div>
+    </div>
+
+    <!-- Charts -->
+    <div class="charts">
+      <canvas id="lineChart"></canvas>
+      <canvas id="barChart"></canvas>
+    </div>
+
+    <!-- Image Cards -->
+    <div class="image-cards">
+      <div class="img-card">
+        <img src="https://images.unsplash.com/photo-1581092795360-9d1c5587b0f1?crop=entropy&cs=tinysrgb&fit=max&w=400&h=200" alt="Image 1">
+        <p>Team Performance</p>
+      </div>
+      <div class="img-card">
+        <img src="https://images.unsplash.com/photo-1521790366060-7e9f0d97b618?crop=entropy&cs=tinysrgb&fit=max&w=400&h=200" alt="Image 2">
+        <p>Top Product</p>
+      </div>
+      <div class="img-card">
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?crop=entropy&cs=tinysrgb&fit=max&w=400&h=200" alt="Image 3">
+        <p>Project Highlights</p>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Reset & Fonts */
+* {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body {background-color:#1e1e2f;color:#e0e0e0;transition:0.3s;}
+a {text-decoration:none;color:inherit;}
+
+/* Sidebar */
+.sidebar {
+  width:250px;
+  height:100vh;
+  background:#252538;
+  position:fixed;
+  top:0;
+  left:0;
+  display:flex;
+  flex-direction:column;
+  padding:20px;
+}
+.sidebar h2 {color:#00bcd4;margin-bottom:30px;text-align:center;}
+.sidebar a {
+  padding:10px 0;color:#ccc;display:block;border-radius:5px;margin-bottom:10px;transition:0.3s;
+}
+.sidebar a:hover {background:#00bcd4;color:#fff;}
+
+/* Header */
+.header {
+  margin-left:250px;
+  height:60px;
+  background:#2a2a3f;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  position:fixed;
+  width:calc(100% - 250px);
+  top:0;
+  box-shadow:0 2px 5px rgba(0,0,0,0.3);
+}
+.header .profile {display:flex;align-items:center;gap:15px;}
+.header .profile img {width:40px;height:40px;border-radius:50%;}
+
+/* Main Content */
+.main {margin-left:250px;margin-top:60px;padding:20px;}
+
+/* Stats Cards */
+.cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-bottom:30px;}
+.card {
+  background:#2c2c44;padding:20px;border-radius:10px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.5);transition:0.3s;
+}
+.card:hover {transform:translateY(-5px);}
+.card h3 {margin-bottom:10px;color:#00bcd4;}
+
+/* Image Cards */
+.image-cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-bottom:30px;}
+.img-card {background:#2c2c44;border-radius:10px;overflow:hidden;box-shadow:0 2px 5px rgba(0,0,0,0.5);}
+.img-card img {width:100%;display:block;}
+.img-card p {padding:10px;color:#fff;text-align:center;}
+
+/* Charts */
+.charts {display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin-bottom:30px;}
+
+/* Toggle Button */
+.toggle-btn {cursor:pointer;padding:10px 15px;background:#00bcd4;color:#fff;border:none;border-radius:5px;transition:0.3s;}
+.toggle-btn:hover {background:#0097a7;}
+
+/* Dark/Light Mode */
+body.light-theme {background:#f5f5f5;color:#1e1e2f;}
+body.light-theme .sidebar {background:#e0e0e0;}
+body.light-theme .sidebar a {color:#333;}
+body.light-theme .sidebar a:hover {background:#00bcd4;color:#fff;}
+body.light-theme .header {background:#fff;color:#1e1e2f;}
+body.light-theme .card {background:#fff;color:#1e1e2f;}
+body.light-theme .img-card {background:#fff;color:#1e1e2f;}
